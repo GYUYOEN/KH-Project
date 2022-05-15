@@ -36,6 +36,16 @@ public class ClothMenu {
 		return s;
 	}
 	
+	public String springClothSplit() {
+		String s = "";
+		s += "┌───────────────────┐\n";
+		s += "│	1. 상의			  │\n";
+		s += "│	2. 하의			  │\n";
+		s += "└───────────────────┘\n";
+		
+		return s;
+	}
+	
 	public String summerClothMain() {
 		String s = "";
 		s += "┌───────────────────┐\n";
@@ -53,6 +63,16 @@ public class ClothMenu {
 		s += "│	1. 여름옷 추가		  │\n";
 		s += "│	2. 여름옷 수정		  │\n";
 		s += "│	2. 여름옷 삭제		  │\n";
+		s += "└───────────────────┘\n";
+		
+		return s;
+	}
+	
+	public String summerClothSplit() {
+		String s = "";
+		s += "┌───────────────────┐\n";
+		s += "│	1. 상의			  │\n";
+		s += "│	2. 하의			  │\n";
 		s += "└───────────────────┘\n";
 		
 		return s;
@@ -80,6 +100,16 @@ public class ClothMenu {
 		return s;
 	}
 	
+	public String fallClothSplit() {
+		String s = "";
+		s += "┌───────────────────┐\n";
+		s += "│	1. 상의			  │\n";
+		s += "│	2. 하의			  │\n";
+		s += "└───────────────────┘\n";
+		
+		return s;
+	}
+	
 	public String winterClothMain() {
 		String s = "";
 		s += "┌───────────────────┐\n";
@@ -97,6 +127,16 @@ public class ClothMenu {
 		s += "│	1. 겨울옷 추가		  │\n";
 		s += "│	2. 겨울옷 수정		  │\n";
 		s += "│	2. 겨울옷 삭제		  │\n";
+		s += "└───────────────────┘\n";
+		
+		return s;
+	}
+	
+	public String winterClothSplit() {
+		String s = "";
+		s += "┌───────────────────┐\n";
+		s += "│	1. 상의			  │\n";
+		s += "│	2. 하의			  │\n";
 		s += "└───────────────────┘\n";
 		
 		return s;

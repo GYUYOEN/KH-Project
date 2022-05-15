@@ -23,6 +23,10 @@ public class ClothVO {
 		this.price = price;
 	}
 	
+	public void setPrice(String price) {
+		this.price = Integer.parseInt(price);
+	}
+	
 	public String getKind() {
 		return kind;
 	}
@@ -42,7 +46,7 @@ public class ClothVO {
 	public String getColor() {
 		return color;
 	}
-	dd
+	
 	public void setColor(String color) {
 		this.color = color;
 	}

@@ -39,30 +39,27 @@ public class DBConn {
 		conn = DriverManager.getConnection(BASE_URL + url_address, username, password);
 		
 		conn.setAutoCommit(false);
+		
+		stat = conn.createStatement();
 	}
 	
-	public PreparedStatement getPstat(String sql) throws Exception {
-		stat = conn.prepareStatement(sql);
-		return stat;
-	}
-	
-	public ResultSet sendSelectQuery() throws Exception {
-		ResultSet rs = this.pstat.executeQuery();
+	public ResultSet sendSelectQuery(String sql) throws Exception {
+		ResultSet rs = this.stat.executeQuery(sql);
 		return rs;
 	}
 	
-	public int sendUpdateQuery() throws Exception {
-		int rs = this.pstat.executeUpdate();
+	public int sendUpdateQuery(String sql) throws Exception {
+		int rs = this.stat.executeUpdate(sql);
 		return rs;
 	}
 	
-	public int sendInsertQuery() throws Exception {
-		int rs = this.pstat.executeUpdate();
+	public int sendInsertQuery(String sql) throws Exception {
+		int rs = this.stat.executeUpdate(sql);
 		return rs;
 	}
 	
-	public int sendDeleteQuery() throws Exception {
-		int rs = this.pstat.executeUpdate();
+	public int sendDeleteQuery(String sql) throws Exception {
+		int rs = this.stat.executeUpdate(sql);
 		return rs;
 	}
 	
@@ -75,7 +72,7 @@ public class DBConn {
 	}
 	
 	public void close() throws Exception {
-		this.pstat.close();
+		this.stat.close();
 		this.conn.close();
 	}
 
