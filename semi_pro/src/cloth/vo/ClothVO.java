@@ -42,7 +42,7 @@ public class ClothVO {
 	public String getColor() {
 		return color;
 	}
-	
+	dd
 	public void setColor(String color) {
 		this.color = color;
 	}
