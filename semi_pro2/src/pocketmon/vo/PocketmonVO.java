@@ -1,4 +1,4 @@
-package poketmon.vo;
+package pocketmon.vo;
 
 public class PocketmonVO {
 	private String pocketmonName;

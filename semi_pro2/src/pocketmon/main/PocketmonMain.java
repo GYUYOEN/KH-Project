@@ -1,6 +1,6 @@
 package pocketmon.main;
 
-import poketmon.view.PocketmonView;
+import pocketmon.view.PocketmonView;
 
 public class PocketmonMain {
 	public static void main(String args[]) {

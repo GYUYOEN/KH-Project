@@ -1,7 +1,7 @@
 package pocketmon.controller;
 
 import pocketmon.dao.PocketmonDAO;
-import poketmon.vo.PocketmonVO;
+import pocketmon.vo.PocketmonVO;
 
 public class PocketmonController {
 	private PocketmonDAO dao = new PocketmonDAO();

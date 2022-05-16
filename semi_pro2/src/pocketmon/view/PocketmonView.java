@@ -1,10 +1,10 @@
-package poketmon.view;
+package pocketmon.view;
 
 import java.util.Random;
 import java.util.Scanner;
 
 import pocketmon.controller.PocketmonController;
-import poketmon.vo.PocketmonVO;
+import pocketmon.vo.PocketmonVO;
 
 public class PocketmonView {
 	 

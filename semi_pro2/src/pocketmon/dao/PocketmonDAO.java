@@ -1,7 +1,7 @@
 package pocketmon.dao;
 
 import conn.db.DBConn;
-import poketmon.vo.PocketmonVO;
+import pocketmon.vo.PocketmonVO;
 
 public class PocketmonDAO {
 	private DBConn db;
