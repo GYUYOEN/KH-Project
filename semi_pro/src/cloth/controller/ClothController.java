@@ -4,6 +4,7 @@ import cloth.vo.ClothVO;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Scanner;
 
 import cloth.vo.ClothVO;
 
@@ -12,6 +13,7 @@ import cloth.vo.ClothVO;
 
 public class ClothController {
 	private ClothDAO dao = new ClothDAO();
+	private Scanner sc = new Scanner(System.in);
 	
 	public boolean cloth(ClothVO data) {
 		ClothVO info = dao.get(data.getBrand());
@@ -31,6 +33,5 @@ public class ClothController {
 	public boolean remove(ClothVO data) {
 		return dao.remove(data);
 	}
-	
 	
 }

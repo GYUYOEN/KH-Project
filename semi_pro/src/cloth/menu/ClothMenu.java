@@ -14,125 +14,29 @@ public class ClothMenu {
 		return s;
 	}
 	
-	public String springClothMain() {
+	public String clothMain() {
 		String s = "";
 		s += "┌───────────────────┐\n";
 		s += "│	1. 랜덤 초이스 	  │\n";
-		s += "│	2. 봄옷 정보 수정	  │\n";
+		s += "│	2. 옷 정보 수정	  │\n";
 		s += "└───────────────────┘\n";
 		
 		return s;
 	}
-	
-	public String springClothModify() {
+
+	public String clothModify() {
 		String s = "";
-		s += "<<< 봄옷 정보 수정 메뉴화면 입니다. >>>\n";
+		s += "<<< 옷 정보 수정 메뉴화면 입니다. >>>\n";
 		s += "┌───────────────────┐\n";
-		s += "│	1. 봄옷 추가		  │\n";
-		s += "│	2. 봄옷 수정		  │\n";
-		s += "│	2. 봄옷 삭제		  │\n";
+		s += "│	1. 옷 추가		  │\n";
+		s += "│	2. 옷 수정		  │\n";
+		s += "│	2. 옷 삭제		  │\n";
 		s += "└───────────────────┘\n";
 		
 		return s;
 	}
 	
-	public String springClothSplit() {
-		String s = "";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 상의			  │\n";
-		s += "│	2. 하의			  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String summerClothMain() {
-		String s = "";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 랜덤 초이스 	  │\n";
-		s += "│	2. 여름옷 정보 수정	  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String summerClothModify() {
-		String s = "";
-		s += "<<< 여름옷 정보 수정 메뉴화면 입니다. >>>\n";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 여름옷 추가		  │\n";
-		s += "│	2. 여름옷 수정		  │\n";
-		s += "│	2. 여름옷 삭제		  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String summerClothSplit() {
-		String s = "";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 상의			  │\n";
-		s += "│	2. 하의			  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String fallClothMain() {
-		String s = "";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 랜덤 초이스 	  │\n";
-		s += "│	2. 가을옷 정보 수정	  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String fallClothModify() {
-		String s = "";
-		s += "<<< 가을옷 정보 수정 메뉴화면 입니다. >>>\n";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 가을옷 추가		  │\n";
-		s += "│	2. 가을옷 수정		  │\n";
-		s += "│	2. 가을옷 삭제		  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String fallClothSplit() {
-		String s = "";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 상의			  │\n";
-		s += "│	2. 하의			  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String winterClothMain() {
-		String s = "";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 랜덤 초이스 	  │\n";
-		s += "│	2. 겨울옷 정보 수정	  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String winterClothModify() {
-		String s = "";
-		s += "<<< 겨울옷 정보 수정 메뉴화면 입니다. >>>\n";
-		s += "┌───────────────────┐\n";
-		s += "│	1. 겨울옷 추가		  │\n";
-		s += "│	2. 겨울옷 수정		  │\n";
-		s += "│	2. 겨울옷 삭제		  │\n";
-		s += "└───────────────────┘\n";
-		
-		return s;
-	}
-	
-	public String winterClothSplit() {
+	public String clothSplit() {
 		String s = "";
 		s += "┌───────────────────┐\n";
 		s += "│	1. 상의			  │\n";

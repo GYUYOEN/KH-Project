@@ -3,6 +3,7 @@ package cloth.dao;
 import java.io.File;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Scanner;
 
 import cloth.vo.ClothVO;
 
@@ -18,15 +19,15 @@ public class ClothDAO {
 	
 	public ClothDAO() {
 		try {
-			db = new DBConn("localhost", "1521", "XEPDB1", "puser1", "puser1");
+			db = new DBConn("localhost", "1521", "XEPDB1", "semi2", "semi2");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
 	public boolean register(ClothVO data) {
-		String query = String.format("INSERT INTO spring_top_clothes VALUES('%s', %d, '%s', '%s', '%s')"
-					  , data.getBrand()
+		String query = String.format("INSERT INTO spring_top_clothes VALUES('%s', %d)"
+					  , data.getPocketmonName()
 					  , data.getPrice()
 					  , data.getKind()
 					  , data.getAppearance()
