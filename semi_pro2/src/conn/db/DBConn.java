@@ -18,11 +18,6 @@ public class DBConn {
 		this.initConnect(username, password);
 	}
 	
-	public DBConn(String tnsAlias, String walletPath, String username, String password) throws Exception {
-		url_address = String.format("%s?TNS_ADMIN=%s", tnsAlias, walletPath);
-		this.initConnect(username, password);
-	}
-	
 	private void initConnect(String username, String password) throws Exception {
 		Class.forName(DRIVER_NAME);
 

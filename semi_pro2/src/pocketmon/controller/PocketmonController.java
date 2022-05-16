@@ -8,8 +8,9 @@ public class PocketmonController {
 	
 	public boolean pocketmon(PocketmonVO data) {
 		
-		String info = data.getPocketmonName();
-		if(info == null) {
+		PocketmonVO pocketmon = dao.get(data.getPocketmonInitName());
+		
+		if(pocketmon != null) {
 			return false;
 		}
 		
@@ -19,6 +20,10 @@ public class PocketmonController {
 	
 	public boolean update(PocketmonVO data) {
 		return dao.update(data);
+	}
+	
+	public boolean update2(PocketmonVO data) {
+		return dao.update2(data);
 	}
 
 	public boolean remove(PocketmonVO data) {
