@@ -1,8 +1,10 @@
 package pocketmon.vo;
 
+import pocketmon.initname.PocketmonInitName;
+
 public class PocketmonVO {
 	private String pocketmonInitName;
-	private String pocketmonName;
+	private String pocketmonNowName;
 	private int pocketmonLevel;
 	
 	public String getPocketmonInitName() {
@@ -12,14 +14,13 @@ public class PocketmonVO {
 	public void setPocketmonInitName(String pocketmonInitName) {
 		this.pocketmonInitName = pocketmonInitName;
 	}
-
 	
-	public String getPocketmonName() {
-		return pocketmonName;
+	public String getPocketmonNowName() {
+		return pocketmonNowName;
 	}
 	
-	public void setPocketmonName(String poketmonName) {
-		this.pocketmonName = poketmonName;
+	public void setPocketmonNowName(String poketmonName) {
+		this.pocketmonNowName = poketmonName;
 	}
 	
 	public int getPocketmonLevel() {
