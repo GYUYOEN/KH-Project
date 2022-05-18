@@ -1,7 +1,5 @@
 package pocketmon.vo;
 
-import pocketmon.initname.PocketmonInitName;
-
 public class PocketmonVO {
 	private String pocketmonInitName;
 	private String pocketmonNowName;

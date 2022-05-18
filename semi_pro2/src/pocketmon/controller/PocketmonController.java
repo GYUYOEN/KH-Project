@@ -1,5 +1,6 @@
 package pocketmon.controller;
 
+import join.vo.JoinVO;
 import pocketmon.dao.PocketmonDAO;
 import pocketmon.vo.PocketmonVO;
 
@@ -46,4 +47,26 @@ public class PocketmonController {
 	public boolean removeODoctor(PocketmonVO data) {
 		return dao.removeODoctor(data);
 	}
+
+	public boolean join(JoinVO data) {
+		JoinVO account = dao.getJoin(data.getUserid());
+		
+		if(account != null) {
+			return false;
+		}
+		
+		boolean result = dao.registerJoin(data);
+		return result;
+	}
+
+	public JoinVO login(String userid, String userpw) {
+		JoinVO data = dao.getJoin(userid);
+		
+		if(data.getUserpw().equals(userpw)) {
+			return data;
+		}
+		
+		return null;
+	}
+
 }

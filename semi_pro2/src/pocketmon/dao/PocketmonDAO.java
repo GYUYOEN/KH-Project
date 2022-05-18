@@ -3,6 +3,7 @@ package pocketmon.dao;
 import java.sql.ResultSet;
 
 import conn.db.DBConn;
+import join.vo.JoinVO;
 import pocketmon.vo.PocketmonVO;
 
 public class PocketmonDAO {
@@ -161,5 +162,47 @@ public class PocketmonDAO {
 		}
 		return null;
 	}
+
+	public JoinVO getJoin(String userid) {
+		String query = String.format("SELECT * FROM members_manager WHERE USERID = '%s'", userid);
+		try {
+			ResultSet rs = db.sendSelectQuery(query);
+			if(rs.next()) {
+				JoinVO data = new JoinVO();
+				data.setUserid(rs.getString("userid"));
+				data.setUserpw(rs.getString("userpw"));
+				data.setNickname(rs.getString("nickname"));
+				data.setCreateDate(rs.getDate("createdate"));
+				return data;
+			}
+			rs.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public boolean registerJoin(JoinVO data) {
+		String query = String.format(
+				"INSERT INTO members_manager VALUES('%s', '%s', '%s', SYSDATE)"
+			   , data.getUserid()
+			   , data.getUserpw()
+			   , data.getNickname()
+			   , data.getCreateDate());
+		int rs;
+		try {
+			rs = db.sendInsertQuery(query);
+			if(rs == 1) {
+				db.commit();
+				return true;
+			}
+			db.rollback();
+			return false;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
 	
 }
